@@ -267,7 +267,7 @@ module.exports = {
 
         <div class="max-w-5xl mx-auto px-4 text-center">
              <h2 class="font-bold text-4xl mb-3 tracking-widest text-[#B8860B]" 
-        style="text-shadow: 2px 2px 0px #b1a864, 4px 4px 0px rgba(0,0,0,0.1);">
+        style="text-shadow: 2px 2px 0px #8B0000, 4px 4px 0px rgba(0,0,0,0.1);">
         ZON PERMAINAN
          </h2>
 
@@ -360,7 +360,7 @@ module.exports = {
 <div class="max-w-2xl mx-auto px-6 text-center mb-16">
     
     <h2 class="text-4xl font-bold tracking-[0.2em] text-[#B8860B] mb-3 uppercase" 
-        style="text-shadow: 2px 2px 0px #b1a864;">
+        style="text-shadow: 2px 2px 0px #8B0000;">
         ARKIB ILMU
     </h2>
     
@@ -474,7 +474,7 @@ module.exports = {
 <div class="max-w-2xl mx-auto px-6 text-center mb-16">
     
     <h2 class="text-4xl font-bold tracking-[0.15em] text-[#B8860B] mb-3 uppercase" 
-        style="text-shadow: 2px 2px 0px #b1a864;">
+        style="text-shadow: 2px 2px 0px #8B0000;">
         Pilih Kategori Kuiz
     </h2>
     
@@ -568,89 +568,146 @@ module.exports = {
 </div>
 
                 <!-- Keputusan -->
-                <div id="quiz-result" class="hidden text-center py-10">
-                    <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h2 class="text-3xl font-bold text-slate-800 mb-2">Taniah!</h2>
-                    <p id="quiz-score-text" class="text-slate-500 mb-8 font-medium">Anda mendapat skor 0/0</p>
-                    <button onclick="exitQuiz()" class="bg-emerald-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-emerald-700 transition">Kembali ke Menu</button>
-                </div>
-            </div>
+<div id="quiz-result" class="hidden text-center py-10 px-4">
+    
+    <div class="relative w-24 h-24 mx-auto mb-8">
+        <div class="absolute inset-0 bg-[#B8860B]/10 rounded-full animate-ping"></div>
+        
+        <div class="relative w-24 h-24 bg-gradient-to-br from-[#B8860B] to-[#D4AF37] text-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(184,134,11,0.5)] border-4 border-[#F2E8D5]">
+            <i class="fas fa-medal text-4xl"></i>
         </div>
+    </div>
+
+    <h2 class="text-4xl font-black text-[#B8860B] mb-3 tracking-widest uppercase" 
+        style="text-shadow: 2px 2px 0px #8B0000;">
+        Mubarak!
+    </h2>
+    
+    <div class="h-[1px] w-20 bg-[#8B0000]/30 mx-auto mb-4"></div>
+
+    <p id="quiz-score-text" class="text-xl font-bold text-[#4A3728] mb-8 italic">
+        Anda telah berjaya mendapat skor <span class="text-[#8B0000] text-2xl not-italic">0/0</span>
+    </p>
+
+    <div class="flex flex-col gap-3 max-w-xs mx-auto">
+        <button onclick="exitQuiz()" 
+            class="w-full bg-[#8B0000] text-white px-8 py-4 rounded-2xl font-black uppercase tracking-widest shadow-lg hover:bg-[#CC0000] hover:-translate-y-1 transition-all active:scale-95">
+            Kembali ke Menu
+        </button>
+        
+        <p class="text-[10px] text-[#4A3728]/50 uppercase tracking-tighter">
+            Teruskan menuntut ilmu untuk keberkatan hidup
+        </p>
+    </div>
+</div>
     </main>
 
     <!-- GALERI PEMBANGUNAN -->
-    <main id="gallery" class="page-content py-20 bg-vintaj-1 min-h-screen">
-        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
-            <div class="mb-12">
-                <h2 class=" text-3xl font-retro text-[#4A3728] tracking-widest drop-shadow-md ">Galeri Pembangunan</h2>
-                <p class="text-sm text-emerald-50/90 font-semibold drop-shadow-md">Seni bina alam dan kod di sebalik SirahPlay.</p>
+   <main id="gallery" class="page-content py-20 bg-vintaj-1 min-h-screen">
+    <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+        <div class="mb-16">
+            <h2 class="text-4xl font-bold tracking-[0.2em] text-[#B8860B] mb-3 uppercase" 
+                style="text-shadow: 2px 2px 0px #8B0000;">
+                Galeri Sirah
+            </h2>
+            <div class="flex justify-center items-center gap-4 mb-4">
+                <div class="h-[1px] w-12 bg-[#8B0000]/40"></div>
+                <i class="fas fa-mosque text-[#8B0000]"></i>
+                <div class="h-[1px] w-12 bg-[#8B0000]/40"></div>
             </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
-                <!-- Gambar 1 -->
-                <div class="bg-white/95 backdrop-blur-md bg-card-leafy p-3.5 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-white/40">
-                    <div class="img-container aspect-square mb-3 shadow-inner">
-                        <div class="spinner" id="spin-g1"></div>
-                        <img src="https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&w=600&q=80" 
-                             class="card-img-style group-hover:scale-110" 
-                             onload="onImgLoad(this, 'spin-g1')" 
-                             onerror="handleImgError(this, 'spin-g1')">
-                    </div>
-                    <div class="relative z-10">
-                        <h4 class="font-block text-[11px] px-1 text-emerald-900">Konsep Seni</h4>
-                        <p class="text-[9px] text-emerald-600/70 px-1 mt-0.5 uppercase font-bold tracking-widest">Flora & Fauna</p>
-                    </div>
-                </div>
-
-                <!-- Gambar 2 -->
-                <div class="bg-white/95 backdrop-blur-md bg-card-leafy p-3.5 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-white/40">
-                    <div class="img-container aspect-square mb-3 shadow-inner">
-                        <div class="spinner" id="spin-g2"></div>
-                        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=600&q=80" 
-                             class="card-img-style group-hover:scale-110" 
-                             onload="onImgLoad(this, 'spin-g2')" 
-                             onerror="handleImgError(this, 'spin-g2')">
-                    </div>
-                    <div class="relative z-10">
-                        <h4 class="font-block text-[11px] px-1 text-emerald-900">Pengekodan</h4>
-                        <p class="text-[9px] text-emerald-600/70 px-1 mt-0.5 uppercase font-bold tracking-widest">Algoritma Alam</p>
-                    </div>
-                </div>
-
-                <!-- Gambar 3 -->
-                <div class="bg-white/95 backdrop-blur-md bg-card-leafy p-3.5 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-white/40">
-                    <div class="img-container aspect-square mb-3 shadow-inner">
-                        <div class="spinner" id="spin-g3"></div>
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80" 
-                             class="card-img-style group-hover:scale-110" 
-                             onload="onImgLoad(this, 'spin-g3')" 
-                             onerror="handleImgError(this, 'spin-g3')">
-                    </div>
-                    <div class="relative z-10">
-                        <h4 class="font-block text-[11px] px-1 text-emerald-900">Ujian Kualiti</h4>
-                        <p class="text-[9px] text-emerald-600/70 px-1 mt-0.5 uppercase font-bold tracking-widest">Kestabilan</p>
-                    </div>
-                </div>
-
-                <!-- Gambar 4 (Ditambah untuk memenuhi grid 4 kolom) -->
-                <div class="bg-white/95 backdrop-blur-md bg-card-leafy p-3.5 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-white/40">
-                    <div class="img-container aspect-square mb-3 shadow-inner">
-                        <div class="spinner" id="spin-g4"></div>
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" 
-                             class="card-img-style group-hover:scale-110" 
-                             onload="onImgLoad(this, 'spin-g4')" 
-                             onerror="handleImgError(this, 'spin-g4')">
-                    </div>
-                    <div class="relative z-10">
-                        <h4 class="font-block text-[11px] px-1 text-emerald-900">Pelancaran</h4>
-                        <p class="text-[9px] text-emerald-600/70 px-1 mt-0.5 uppercase font-bold tracking-widest">Siap Sedia</p>
-                    </div>
-                </div>
-            </div>
+            <p class="text-sm text-[#4A3728] font-bold italic opacity-80">
+                Visualisasi fasa penting dan peninggalan sejarah perjuangan Baginda SAW.
+            </p>
         </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
+            
+            <div class="bg-white/90 backdrop-blur-md p-3 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-[#B8860B]/20 cursor-pointer"
+                 onclick="openLightbox(this)"
+                 data-fullsrc="mekah.jpg"
+                 data-title="Kota Mekah"
+                 data-desc="Tempat kelahiran Nabi Muhammad SAW dan pusat ibadah umat Islam.">
+                <div class="img-container aspect-square mb-3 shadow-inner overflow-hidden rounded-2xl bg-[#F2E8D5]">
+                    <div class="spinner" id="spin-g1"></div>
+                    <img src="mekah2.jpg" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                         onload="onImgLoad(this, 'spin-g1')" 
+                         onerror="handleImgError(this, 'spin-g1')">
+                </div>
+                <div class="relative z-10 px-1">
+                    <h4 class="font-bold text-[12px] text-[#4A3728]">Kota Mekah</h4>
+                    <p class="text-[9px] text-[#8B0000] mt-0.5 uppercase font-black tracking-widest">Tempat Kelahiran Baginda SAW.</p>
+                </div>
+            </div>
+
+            <div class="bg-white/90 backdrop-blur-md p-3 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-[#B8860B]/20 cursor-pointer"
+                 onclick="openLightbox(this)"
+                 data-fullsrc="madinah.jpg"
+                 data-title="Kota Madinah"
+                 data-desc="Kota Hijrah dan pusat pemerintahan Islam yang pertama.">
+                <div class="img-container aspect-square mb-3 shadow-inner overflow-hidden rounded-2xl bg-[#F2E8D5]">
+                    <div class="spinner" id="spin-g2"></div>
+                    <img src="madinah2.jpg" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                         onload="onImgLoad(this, 'spin-g2')" 
+                         onerror="handleImgError(this, 'spin-g2')">
+                </div>
+                <div class="relative z-10 px-1">
+                    <h4 class="font-bold text-[12px] text-[#4A3728]">Kota Madinah</h4>
+                    <p class="text-[9px] text-[#8B0000] mt-0.5 uppercase font-black tracking-widest">Pusat Pemerintahan</p>
+                </div>
+            </div>
+
+            <div class="bg-white/90 backdrop-blur-md p-3 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-[#B8860B]/20 cursor-pointer"
+                 onclick="openLightbox(this)"
+                 data-fullsrc="gurunsahara.jpg"
+                 data-title="Gurun Sahara"
+                 data-desc="Menggambarkan cabaran perjalanan Hijrah merentasi padang pasir.">
+                <div class="img-container aspect-square mb-3 shadow-inner overflow-hidden rounded-2xl bg-[#F2E8D5]">
+                    <div class="spinner" id="spin-g3"></div>
+                    <img src="gurunsahara2.jpg" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                         onload="onImgLoad(this, 'spin-g3')" 
+                         onerror="handleImgError(this, 'spin-g3')">
+                </div>
+                <div class="relative z-10 px-1">
+                    <h4 class="font-bold text-[12px] text-[#4A3728]">Gurun Sahara</h4>
+                    <p class="text-[9px] text-[#8B0000] mt-0.5 uppercase font-black tracking-widest">Laluan Hijrah</p>
+                </div>
+            </div>
+
+            <div class="bg-white/90 backdrop-blur-md p-3 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-[#B8860B]/20 cursor-pointer"
+                 onclick="openLightbox(this)"
+                 data-fullsrc="guahira.jpg"
+                 data-title="Wahyu Pertama"
+                 data-desc="Detik permulaan kenabian di Gua Hira.">
+                <div class="img-container aspect-square mb-3 shadow-inner overflow-hidden rounded-2xl bg-[#F2E8D5]">
+                    <div class="spinner" id="spin-g4"></div>
+                    <img src="guahira2.jpg" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                         onload="onImgLoad(this, 'spin-g4')" 
+                         onerror="handleImgError(this, 'spin-g4')">
+                </div>
+                <div class="relative z-10 px-1">
+                    <h4 class="font-bold text-[12px] text-[#4A3728]">Wahyu Pertama</h4>
+                    <p class="text-[9px] text-[#8B0000] mt-0.5 uppercase font-black tracking-widest">Gua Hira'</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
     </main>
+
+    <div id="lightbox" class="fixed inset-0 z-[999] hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-6">
+    <button onclick="closeLightbox()" class="absolute top-5 right-5 text-white/70 hover:text-[#D4AF37] text-3xl">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="max-w-3xl w-full text-center">
+        <img id="lightbox-img" src="" class="max-h-[70vh] mx-auto rounded-lg border-2 border-[#B8860B]/50 shadow-2xl">
+        <h4 id="lightbox-title" class="text-[#D4AF37] mt-4 text-xl font-bold tracking-widest uppercase"></h4>
+        <p id="lightbox-desc" class="text-white/80 text-xs mt-2 italic px-4"></p>
+    </div>
+</div>
 
     <!-- MODAL ILMU -->
     <div id="story-modal" class="modal px-4" onclick="closeStory()">
@@ -683,6 +740,8 @@ module.exports = {
         </div>
     </div>
 </footer>
+
+
 
     <!-- SCRIPT -->
     <script>
@@ -742,9 +801,9 @@ module.exports = {
             'kecil': [
                 { q: 'Bilakah tarikh lahir Nabi Muhammad SAW?', a: ['12 Rabiulawal', '10 Muharram', '1 Ramadan', '27 Rejab'], correct: 0 },
                 { q: 'Siapakah ibu susuan Nabi di pedalaman?', a: ['Halimatus Sa\'diyah', 'Aminah', 'Thuwaibah', 'Ummu Aiman'], correct: 0 },
-                { q: 'Apakah peristiwa ajaib yang berlaku semasa kecil di perkampungan Bani Sa\'ad?', a: ['Pembelahan Dada', 'Isra Mi\'raj', 'Turun Wahyu', 'Bulan Terbelah'], correct: 0 },
-                { q: 'Nabi Muhammad SAW lahir pada Tahun...?', a: ['Gajah', 'Kuda', 'Unta', 'Singa'], correct: 0 },
-                { q: 'Siapakah datuk Nabi yang menjaganya selepas kematian ibu Baginda?', a: ['Abdul Muttalib', 'Abu Talib', 'Abu Lahab', 'Abbas'], correct: 0 }
+                { q: 'Apakah peristiwa ajaib yang berlaku semasa kecil di perkampungan Bani Sa\'ad?', a: ['Turun Wahyu', 'Isra Mi\'raj', 'Pembelahan Dada', 'Bulan Terbelah'], correct: 2 },
+                { q: 'Nabi Muhammad SAW lahir pada Tahun...?', a: ['Kuda', 'Gajah', 'Unta', 'Singa'], correct: 1 },
+                { q: 'Siapakah datuk Nabi yang menjaganya selepas kematian ibu Baginda?', a: ['Abbas', 'Abu Talib', 'Abu Lahab', 'Abdul Muttalib'], correct: 3 }
             ],
             'remaja': [
                 { q: 'Apakah gelaran yang diberikan kepada Nabi kerana sifat jujurnya?', a: ['As-Siddiq', 'Al-Amin', 'Al-Faruq', 'Zun Nurain'], correct: 1 },
@@ -758,7 +817,7 @@ module.exports = {
                 { q: 'Berapakah usia Nabi semasa menjadi Rasul?', a: ['25 Tahun', '40 Tahun', '63 Tahun', '50 Tahun'], correct: 1 },
                 { q: 'Apakah nama bandar destinasi Hijrah Nabi?', a: ['Mekah', 'Madinah', 'Taif', 'Habsyah'], correct: 1 },
                 { q: 'Siapakah orang pertama daripada kalangan wanita yang memeluk Islam?', a: ['Saiditina Khadijah', 'Saiditina Aisyah', 'Saiditina Fatimah', 'Ummu Salamah'], correct: 0 },
-                { q: 'Apakah nama masjid pertama yang dibina semasa Hijrah?', a: ['Masjid Quba', 'Masjid Nabawi', 'Masjidil Haram', 'Masjid Aqsa'], correct: 0 }
+                { q: 'Apakah nama masjid pertama yang dibina semasa Hijrah?', a: ['Masjid Aqsa', 'Masjid Nabawi', 'Masjidil Haram', 'Masjid Quba'], correct: 3 }
             ],
             'akhir': [
                 { q: 'Di manakah Nabi menyampaikan Khutbah Terakhir?', a: ['Lembah Arafah', 'Mina', 'Muzdalifah', 'Masjid Nabawi'], correct: 0 },
@@ -824,6 +883,44 @@ module.exports = {
             document.getElementById('quiz-result').classList.add('hidden');
             document.getElementById('quiz-menu').classList.remove('hidden');
         }
+
+        function openLightbox(element) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxDesc = document.getElementById('lightbox-desc');
+
+    // Mengambil data daripada atribut kad yang diklik
+    const fullSrc = element.getAttribute('data-fullsrc');
+    const title = element.getAttribute('data-title');
+    const desc = element.getAttribute('data-desc');
+
+    // Memasukkan data ke dalam elemen modal lightbox
+    if (lightboxImg) lightboxImg.src = fullSrc;
+    if (lightboxTitle) lightboxTitle.textContent = title;
+    if (lightboxDesc) lightboxDesc.textContent = desc;
+
+    // Menghilangkan kelas 'hidden' untuk memaparkan modal
+    lightbox.classList.remove('hidden');
+    
+    // Menghalang skrol pada latar belakang apabila modal dibuka
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    
+    // Menambah semula kelas 'hidden' untuk menutup modal
+    lightbox.classList.add('hidden');
+    
+    // Membolehkan semula skrol pada latar belakang
+    document.body.style.overflow = 'auto';
+}
+
+// Menambah fungsi tutup apabila pengguna menekan butang 'Esc'
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});
     </script>
 </body>
 </html>
