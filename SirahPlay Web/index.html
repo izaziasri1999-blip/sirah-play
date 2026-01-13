@@ -74,31 +74,7 @@ module.exports = {
             background-attachment: fixed;
         }
         
-        /* --- CORAK TUMBUHAN PADA KAD (LEAFY OVERLAY) --- */
-        .bg-card-leafy {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .bg-card-leafy::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            opacity: 0.10;
-            pointer-events: none;
-            background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 0c0 13.8-11.2 25-25 25 13.8 0 25 11.2 25 25 0-13.8 11.2-25 25-25-13.8 0-25-11.2-25-25z' fill='%23597445' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-            /* Corak ini memberikan kesan dedaun kecil yang berulang */
-        }
-
-        /* --- INI KOD UNTUK WARNA GRADIENT BARU ANDA --- */
-        .bg-custom-gradient {
-            background: linear-gradient(180deg, #D9C5A0,#8B5E3C,#F2E8D5);
-        }  
-
-                /* --- INI KOD UNTUK WARNA GRADIENT BARU ANDA --- */
-        .bg-custom-gradient-1 {
-            background: linear-gradient(180deg,#597445, #c6e06e);
-        }
+       
 
         /* Kesan Hover Butang Blocky */
         .btn-blocky {
@@ -134,8 +110,10 @@ module.exports = {
 }
 
     </style>
+<!-- navigasi -->
 </head>
 <body class="bg-slate-50 text-slate-900">
+    <nav class="this is navigasi">
 
 <nav class="sticky top-0 z-50 bg-[#F2E8D5]/30 backdrop-blur-md border-b-2 border-[#B8860B]/30 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
@@ -197,13 +175,13 @@ module.exports = {
 <div class="flex gap-4">
     <button onclick="showPage('game')" 
         class="bg-[#F2E8D5] text-[#8B0000] border-2 border-[#8B0000] px-8 py-4 rounded-xl font Londrina Solid text-xl 
-               transition-all duration-300 transform hover:-translate-y-1 hover:bg-[#D4AF37] hover:text-[#4A3728] hover:border-[#B8860B] hover:shadow-[0_0_15px_rgba(212,175,55,0.6)] hover-shine">
+               transition-all duration-300 transform hover:-translate-y-1 hover:bg-[#D4AF37] hover:text-[#4A3728] hover:border-[#B8860B] hover:shadow-[0_0_15px_rgba(212,175,55,0.6)] hover-shine btn-blocky">
         Mula Bermain
     </button>
 
     <button onclick="showPage('quiz')" 
         class="bg-[#8B0000] text-[#D9C5A0] px-8 py-4 rounded-xl font Londrina Solid text-xl 
-               transition-all duration-300 transform hover:-translate-y-1 hover:bg-gradient-to-r hover:from-[#B8860B] hover:to-[#D4AF37] hover:text-[#4A3728] shadow-lg border-b-4 border-[#5E0000] hover:border-[#805A10] hover-shine">
+               duration-300 transform hover:-translate-y-1 hover:bg-gradient-to-r hover:from-[#B8860B] hover:to-[#D4AF37] hover:text-[#4A3728] shadow-lg border-b-4 border-[#5E0000] hover:border-[#805A10] hover-shine btn-blocky">
         Uji Minda
     </button>
 </div>
