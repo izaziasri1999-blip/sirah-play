@@ -34,7 +34,6 @@
             box-shadow: 0 25px 50px -12px rgba(5, 150, 105, 0.25);
         }
 
-
         .bg-vintaj-1 {
     /* Gabungan warna gradient dan tekstur kertas */
     background: 
@@ -61,7 +60,6 @@ module.exports = {
     },
   },
 }
-
 
                 /* Menambah corak tumbuhan pada seluruh latar belakang web */
         .bg-nature-pattern::before {
@@ -330,114 +328,31 @@ module.exports = {
 </div>
     </main>
 
-
-    <!-- HALAMAN ILMU SIRAH -->
+      <!-- HALAMAN ILMU SIRAH (ARKIB ILMU) -->
     <main id="sirah" class="page-content py-20 bg-vintaj-1 min-h-screen">
         <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-16">
-<div class="max-w-2xl mx-auto px-6 text-center mb-16">
-    
-    <h2 class="text-4xl font-bold tracking-[0.2em] text-[#B8860B] mb-3 uppercase" 
-        style="text-shadow: 2px 2px 0px #8B0000;">
-        ARKIB ILMU
-    </h2>
-    
-    <div class="flex justify-center items-center gap-4 mb-4">
-        <div class="h-[0.5px] w-12 bg-[#8B0000]/40"></div>
-        <i class="fas fa-scroll text-[#8B0000] text-sm"></i>
-        <div class="h-[0.5px] w-12 bg-[#8B0000]/40"></div>
-    </div>
-
-    <p class="text-[#4A3728] font-medium italic opacity-90 leading-relaxed">
-        Mempelajari fasa-fasa penting dalam kehidupan <br>
-        <span class="text-[#8B0000] font-bold not-italic border-b border-[#B8860B]">Nabi Muhammad SAW</span>
-    </p>
-</div>
+                <div class="max-w-2xl mx-auto px-6 text-center mb-16">
+                    <h2 class="text-4xl font-bold tracking-[0.2em] text-[#B8860B] mb-3 uppercase" 
+                        style="text-shadow: 2px 2px 0px #8B0000;">
+                        ARKIB ILMU
+                    </h2>
+                    <div class="flex justify-center items-center gap-4 mb-4">
+                        <div class="h-[0.5px] w-12 bg-[#8B0000]/40"></div>
+                        <i class="fas fa-scroll text-[#8B0000] text-sm"></i>
+                        <div class="h-[0.5px] w-12 bg-[#8B0000]/40"></div>
+                    </div>
+                    <p class="text-[#4A3728] font-medium italic opacity-90 leading-relaxed">
+                        Mempelajari fasa-fasa penting dalam kehidupan <br>
+                        <span class="text-[#8B0000] font-bold not-italic border-b border-[#B8860B]">Nabi Muhammad SAW</span>
+                    </p>
+                </div>
             </div>
-            <div class="space-y-8">
-                 <!-- Fasa 1: Waktu Kecil -->
-                <article class="bg-white p-8 md:p-8 rounded-3xl shadow-sm border border-slate-200 hover:border-emerald-300 transition overflow-hidden">
-                    <div class="flex flex-col md:flex-row gap-8 items-center">
-                        <!-- Kotak Imej (Container) -->
-                        <div class="w-full md:w-1/3 aspect-video bg-slate-50 rounded-2xl overflow-hidden relative"> 
-                            <!-- [Imej Padang Pasir] -->
-                            <img src="https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?q=80&w=800&auto=format&fit=crop" 
-                                 alt="Padang Pasir Kanak-kanak" 
-                                 class="card-img-style">
-                            <div class="img-overlay"></div>
-                        </div>
-                        <div class="md:w-2/3">
-                            <span class="text-emerald-600 font-bold text-xs uppercase tracking-widest">Fasa 1</span>
-                            <h3 class="text-2xl font-bold my-2 text-emerald-900">Waktu Kecil Nabi</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Kelahiran yang membawa cahaya ke seluruh alam dan didikan awal di pedalaman Mekah.</p>
-                            <button onclick="openStory('kecil')" class="text-emerald-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
-                                Baca Lanjut <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-                <!-- Fasa 2 -->
-                <article class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:border-blue-300 transition">
-                    <div class="flex flex-col md:flex-row gap-8 items-center">
-                        <div class="w-full md:w-1/3 aspect-video bg-slate-50 rounded-2xl overflow-hidden relative">
-                            <!-- [Imej Waktu Pagi di Mekah] -->
-                            <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=800&auto=format&fit=crop" 
-                                 alt="Waktu Pagi Tenang di Mekah" 
-                                 class="card-img-style">
-                            <div class="img-overlay"></div>
-                        </div>
-                        <div class="md:w-2/3">
-                            <span class="text-blue-600 font-bold text-xs uppercase tracking-widest">Fasa 2</span>
-                            <h3 class="text-2xl font-bold my-2 text-blue-900">Waktu Remaja</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Ketokohan sebagai pemuda Al-Amin yang jujur dalam setiap urusan perniagaan.</p>
-                            <button onclick="openStory('remaja')" class="text-blue-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
-                                Baca Lanjut <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-                <!-- Fasa 3 -->
-                <article class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-slate-200 hover:border-emerald-300 transition-all hover:shadow-xl overflow-hidden group">
-                    <div class="flex flex-col md:flex-row gap-8 items-center">
-                        <div class="w-full md:w-1/3 aspect-video rounded-2xl overflow-hidden relative img-container">
-                            <!-- [Imej Gua Hira Malam] -->
-                            <i class="fas fa-star"></i>
-                            <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=800&auto=format&fit=crop" 
-                                 alt="Gua Hira Malam" 
-                                 class="card-img-style absolute inset-0 group-hover:scale-105"
-                                 onload="this.parentElement.querySelector('i').style.display='none'">
-                            <div class="img-overlay z-10"></div>
-                        </div>
-                        <div class="md:w-2/3">
-                            <span class="text-amber-600 font-bold text-xs uppercase tracking-widest">Fasa 3</span>
-                            <h3 class="text-2xl font-bold my-2 text-amber-900">Perjuangan Dakwah Rasulullah</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Penerimaan wahyu pertama dan pengorbanan menyebarkan Islam di tengah tentangan.</p>
-                            <button onclick="openStory('dakwah')" class="text-amber-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
-                                Baca Lanjut <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-                <!-- Fasa 4 -->
-                <article class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:border-rose-300 transition">
-                    <div class="flex flex-col md:flex-row gap-8 items-center">
-                        <div class="w-full md:w-1/3 aspect-video bg-rose-50 rounded-2xl overflow-hidden flex items-center justify-center">
-                                <img src="https://images.unsplash.com/photo-1542662565-7e4b66bae529?q=80&w=800&auto=format&fit=crop" 
-                                     alt="[Imej Gua Hira]"
-                                     class="card-img-style group-hover:scale-110"
-                                     onerror="this.style.display='none'">
-                                <div class="img-overlay"></div>
-                        </div>
-                        <div class="md:w-2/3">
-                            <span class="text-rose-600 font-bold text-xs uppercase tracking-widest">Fasa 4</span>
-                            <h3 class="text-2xl font-bold my-2 text-rose-900">Waktu Akhir Hayat</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed mb-4">Detik-detik terakhir Baginda yang penuh hiba dan nasihat buat seluruh umat.</p>
-                            <button onclick="openStory('akhir')" class="text-rose-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
-                                Baca Lanjut <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </article>
+
+            <!-- CONTAINER UTAMA UNTUK KISAH DARI FIREBASE -->
+            <div id="storiesContainer" class="space-y-8">
+                <!-- Data dari Firebase akan masuk di sini secara automatik -->
+                <p class="text-center text-slate-500 italic">Memuatkan Arkib Ilmu...</p>
             </div>
         </div>
     </main>
@@ -598,16 +513,17 @@ module.exports = {
             </p>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
+        <div id="galleryGrid" class="flex overflow-x-auto gap-6 pb-4 snap-x scrollbar-hide">
+
             
             <div class="bg-white/90 backdrop-blur-md p-3 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-[#B8860B]/20 cursor-pointer"
                  onclick="openLightbox(this)"
-                 data-fullsrc="SirahPlay Web/mekah.jpg"
+                 data-fullsrc="mekah.jpg"
                  data-title="Kota Mekah"
                  data-desc="Tempat kelahiran Nabi Muhammad SAW dan pusat ibadah umat Islam.">
                 <div class="img-container aspect-square mb-3 shadow-inner overflow-hidden rounded-2xl bg-[#F2E8D5]">
                     <div class="spinner" id="spin-g1"></div>
-                    <img src="SirahPlay Web/mekah2.jpg" 
+                    <img src="mekah2.jpg" 
                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                          onload="onImgLoad(this, 'spin-g1')" 
                          onerror="handleImgError(this, 'spin-g1')">
@@ -620,12 +536,12 @@ module.exports = {
 
             <div class="bg-white/90 backdrop-blur-md p-3 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-[#B8860B]/20 cursor-pointer"
                  onclick="openLightbox(this)"
-                 data-fullsrc="SirahPlay Web/madinah.jpg"
+                 data-fullsrc="madinah.jpg"
                  data-title="Kota Madinah"
                  data-desc="Kota Hijrah dan pusat pemerintahan Islam yang pertama.">
                 <div class="img-container aspect-square mb-3 shadow-inner overflow-hidden rounded-2xl bg-[#F2E8D5]">
                     <div class="spinner" id="spin-g2"></div>
-                    <img src="SirahPlay Web/madinah2.jpg" 
+                    <img src="madinah2.jpg" 
                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                          onload="onImgLoad(this, 'spin-g2')" 
                          onerror="handleImgError(this, 'spin-g2')">
@@ -638,12 +554,12 @@ module.exports = {
 
             <div class="bg-white/90 backdrop-blur-md p-3 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-[#B8860B]/20 cursor-pointer"
                  onclick="openLightbox(this)"
-                 data-fullsrc="SirahPlay Web/gurunsahara.jpg"
+                 data-fullsrc="/gurunsahara.jpg"
                  data-title="Gurun Sahara"
                  data-desc="Menggambarkan cabaran perjalanan Hijrah merentasi padang pasir.">
                 <div class="img-container aspect-square mb-3 shadow-inner overflow-hidden rounded-2xl bg-[#F2E8D5]">
                     <div class="spinner" id="spin-g3"></div>
-                    <img src="SirahPlay Web/gurunsahara2.jpg" 
+                    <img src="gurunsahara2.jpg" 
                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                          onload="onImgLoad(this, 'spin-g3')" 
                          onerror="handleImgError(this, 'spin-g3')">
@@ -656,12 +572,12 @@ module.exports = {
 
             <div class="bg-white/90 backdrop-blur-md p-3 rounded-[1.5rem] shadow-lg hover:shadow-2xl transition-all group border border-[#B8860B]/20 cursor-pointer"
                  onclick="openLightbox(this)"
-                 data-fullsrc="SirahPlay Web/guahira.jpg"
+                 data-fullsrc="guahira.jpg"
                  data-title="Wahyu Pertama"
                  data-desc="Detik permulaan kenabian di Gua Hira.">
                 <div class="img-container aspect-square mb-3 shadow-inner overflow-hidden rounded-2xl bg-[#F2E8D5]">
                     <div class="spinner" id="spin-g4"></div>
-                    <img src="SirahPlay Web/guahira2.jpg" 
+                    <img src="guahira2.jpg" 
                          class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                          onload="onImgLoad(this, 'spin-g4')" 
                          onerror="handleImgError(this, 'spin-g4')">
@@ -687,13 +603,25 @@ module.exports = {
     </div>
 </div>
 
-    <!-- MODAL ILMU -->
-    <div id="story-modal" class="modal px-4" onclick="closeStory()">
-        <div class="bg-white max-w-2xl w-full max-h-[85vh] overflow-y-auto rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative" onclick="event.stopPropagation()">
-            <button onclick="closeStory()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-600 text-xl"><i class="fas fa-times"></i></button>
-            <div id="story-content"></div>
+<!-- Modal (Gaya yang anda mahu) -->
+    <div id="story-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-2xl max-h-[85vh] rounded-[2rem] overflow-hidden relative shadow-2xl border-4 border-emerald-500 flex flex-col">
+            <!-- Header -->
+            <div class="p-6 border-b border-emerald-100 flex justify-between items-center bg-white sticky top-0">
+                <span class="text-emerald-600 font-bold text-lg">Paparan Kisah</span>
+                <button onclick="closeStory()" class="text-slate-400 hover:text-red-500 p-2">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Tempat kandungan -->
+            <div id="story-content" class="p-8 overflow-y-auto">
+                <!-- Kandungan dijana oleh JavaScript -->
+            </div>
         </div>
     </div>
+
+
 
     
 <footer class="bg-[#2D1B10] text-[#D9C5A0]/60 py-4 px-2 border-t-2 border-[#B8860B]">
@@ -724,7 +652,6 @@ module.exports = {
 </footer>
 
 
-
     <!-- SCRIPT -->
     <script>
         // Navigasi
@@ -735,80 +662,80 @@ module.exports = {
         }
 
         // Data Kisah Penuh
-        const stories = {
-            'kecil': { 
-                title: 'Waktu Kecil Nabi Muhammad SAW', 
-                text: `<p class='mb-4'>Nabi Muhammad SAW dilahirkan di Mekah pada hari Isnin, 12 Rabiulawal Tahun Gajah. Bapa Baginda, Abdullah, wafat sebelum Baginda lahir. Baginda disusukan oleh Thuwaibah untuk seketika sebelum dibawa ke kawasan pedalaman oleh <strong>Halimatus Sa'diyah</strong>.</p>
-                       <p class='mb-4'>Tujuannya adalah untuk memastikan Nabi membesar dalam udara yang bersih dan menguasai bahasa Arab yang paling tulen. Di perkampungan Bani Sa'ad, berlaku peristiwa <em>Pembedahan Dada</em> (Syaqq al-Sadr) oleh malaikat Jibril untuk menyucikan hati Baginda.</p>
-                       <p>Pada usia 6 tahun, ibu Baginda Aminah wafat. Baginda kemudian dijaga oleh datuknya, Abdul Muttalib, sehingga datuknya juga wafat dua tahun kemudian. Selepas itu, Baginda dipelihara oleh bapa saudaranya, Abu Talib.</p>`
-            },
-            'remaja': { 
-                title: 'Waktu Remaja & Pemuda', 
-                text: `<p class='mb-4'>Semasa remaja, Nabi Muhammad SAW mula mengikuti bapa saudaranya, Abu Talib, berniaga sehingga ke negeri Syam. Dalam perjalanan pertama, seorang rahib bernama Bahira telah melihat tanda-tanda kenabian pada diri Baginda.</p>
-                       <p class='mb-4'>Baginda tidak pernah terlibat dalam aktiviti jahiliyah yang sia-sia seperti penyembahan berhala atau perjudian. Kerana sifat amanah dan jujurnya, Baginda diberi gelaran <strong>Al-Amin</strong> oleh penduduk Mekah.</p>
-                       <p>Pada usia 25 tahun, Baginda menguruskan perniagaan Saiditina Khadijah. Keperibadian mulia Baginda telah menarik hati Khadijah, yang kemudiannya membawa kepada perkahwinan mereka yang penuh keberkatan.</p>`
-            },
-            'dakwah': { 
-                title: 'Perjuangan Dakwah Baginda', 
-                text: `<p class='mb-4'>Pada usia 40 tahun, Nabi menerima wahyu pertama di Gua Hira' melalui malaikat Jibril. Dakwah bermula secara rahsia (sirr) selama 3 tahun sebelum diperintahkan Allah untuk berdakwah secara terang-terangan (jahar).</p>
-                       <p class='mb-4'>Baginda dan para sahabat menghadapi pelbagai penyeksaan dan boikot daripada kaum kafir Quraisy. Kemuncak tentangan membawa kepada peristiwa <strong>Hijrah ke Madinah</strong>, di mana Baginda membina masjid pertama dan menyatukan kaum Muhajirin serta Ansar.</p>
-                       <p>Pelbagai peperangan berlaku seperti Badar, Uhud, dan Khandaq demi mempertahankan Islam sehingga akhirnya berlaku Pembukaan Kota Mekah (Fathu Makkah) tanpa pertumpahan darah yang besar.</p>`
-            },
-            'akhir': { 
-                title: 'Waktu Akhir Hayat Baginda', 
-                text: `<p class='mb-4'>Pada tahun ke-10 Hijrah, Nabi Muhammad SAW mengerjakan <strong>Haji Wada'</strong> (Haji Perpisahan). Baginda menyampaikan Khutbah Terakhir yang menekankan tentang persamaan taraf manusia, hak wanita, dan kepentingan berpegang kepada Al-Quran dan Sunnah.</p>
-                       <p class='mb-4'>Sekembalinya ke Madinah, kesihatan Baginda mula merosot. Pada hari Isnin, 12 Rabiulawal tahun ke-11 Hijrah, Baginda wafat di pangkuan Saiditina Aisyah RA.</p>
-                       <p>Kewafatan Baginda meninggalkan kesedihan yang amat mendalam buat para sahabat dan seluruh umat. Namun, Baginda telah menyempurnakan amanah menyampaikan agama Islam yang kini tersebar ke seluruh pelosok dunia.</p>`
-            }
-        };
+       // const stories = {
+            //'kecil': { 
+               // title: 'Waktu Kecil Nabi Muhammad SAW', 
+               // text: `<p class='mb-4'>Nabi Muhammad SAW dilahirkan di Mekah pada hari Isnin, 12 Rabiulawal Tahun Gajah. Bapa Baginda, Abdullah, wafat sebelum Baginda lahir. Baginda disusukan oleh Thuwaibah untuk seketika sebelum dibawa ke kawasan pedalaman oleh <strong>Halimatus Sa'diyah</strong>.</p>
+                      // <p class='mb-4'>Tujuannya adalah untuk memastikan Nabi membesar dalam udara yang bersih dan menguasai bahasa Arab yang paling tulen. Di perkampungan Bani Sa'ad, berlaku peristiwa <em>Pembedahan Dada</em> (Syaqq al-Sadr) oleh malaikat Jibril untuk menyucikan hati Baginda.</p>
+                      // <p>Pada usia 6 tahun, ibu Baginda Aminah wafat. Baginda kemudian dijaga oleh datuknya, Abdul Muttalib, sehingga datuknya juga wafat dua tahun kemudian. Selepas itu, Baginda dipelihara oleh bapa saudaranya, Abu Talib.</p>`
+           // },
+           // 'remaja': { 
+               // title: 'Waktu Remaja & Pemuda', 
+               // text: `<p class='mb-4'>Semasa remaja, Nabi Muhammad SAW mula mengikuti bapa saudaranya, Abu Talib, berniaga sehingga ke negeri Syam. Dalam perjalanan pertama, seorang rahib bernama Bahira telah melihat tanda-tanda kenabian pada diri Baginda.</p>
+                     //  <p class='mb-4'>Baginda tidak pernah terlibat dalam aktiviti jahiliyah yang sia-sia seperti penyembahan berhala atau perjudian. Kerana sifat amanah dan jujurnya, Baginda diberi gelaran <strong>Al-Amin</strong> oleh penduduk Mekah.</p>
+                      // <p>Pada usia 25 tahun, Baginda menguruskan perniagaan Saiditina Khadijah. Keperibadian mulia Baginda telah menarik hati Khadijah, yang kemudiannya membawa kepada perkahwinan mereka yang penuh keberkatan.</p>`
+           // },
+           // 'dakwah': { 
+               // title: 'Perjuangan Dakwah Baginda', 
+              //  text: `<p class='mb-4'>Pada usia 40 tahun, Nabi menerima wahyu pertama di Gua Hira' melalui malaikat Jibril. Dakwah bermula secara rahsia (sirr) selama 3 tahun sebelum diperintahkan Allah untuk berdakwah secara terang-terangan (jahar).</p>
+                      // <p class='mb-4'>Baginda dan para sahabat menghadapi pelbagai penyeksaan dan boikot daripada kaum kafir Quraisy. Kemuncak tentangan membawa kepada peristiwa <strong>Hijrah ke Madinah</strong>, di mana Baginda membina masjid pertama dan menyatukan kaum Muhajirin serta Ansar.</p>
+                      // <p>Pelbagai peperangan berlaku seperti Badar, Uhud, dan Khandaq demi mempertahankan Islam sehingga akhirnya berlaku Pembukaan Kota Mekah (Fathu Makkah) tanpa pertumpahan darah yang besar.</p>`
+           // },
+           // 'akhir': { 
+               // title: 'Waktu Akhir Hayat Baginda', 
+               // text: `<p class='mb-4'>Pada tahun ke-10 Hijrah, Nabi Muhammad SAW mengerjakan <strong>Haji Wada'</strong> (Haji Perpisahan). Baginda menyampaikan Khutbah Terakhir yang menekankan tentang persamaan taraf manusia, hak wanita, dan kepentingan berpegang kepada Al-Quran dan Sunnah.</p>
+                     //  <p class='mb-4'>Sekembalinya ke Madinah, kesihatan Baginda mula merosot. Pada hari Isnin, 12 Rabiulawal tahun ke-11 Hijrah, Baginda wafat di pangkuan Saiditina Aisyah RA.</p>
+                     //  <p>Kewafatan Baginda meninggalkan kesedihan yang amat mendalam buat para sahabat dan seluruh umat. Namun, Baginda telah menyempurnakan amanah menyampaikan agama Islam yang kini tersebar ke seluruh pelosok dunia.</p>`
+          //  }
+      //  };
 
-        function openStory(id) {
-            const s = stories[id];
-            document.getElementById('story-content').innerHTML = `
-                <h2 class="text-3xl font-bold mb-6 text-emerald-900">${s.title}</h2>
-                <div class="text-slate-600 leading-relaxed text-lg">${s.text}</div>
-                <div class="mt-8 pt-6 border-t border-slate-100 flex justify-end">
-                    <button onclick="closeStory()" class="bg-emerald-600 text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-emerald-100 hover:bg-emerald-700 transition">Tutup Bacaan</button>
-                </div>
-            `;
-            document.getElementById('story-modal').classList.add('active');
-        }
+       //function openStory(id) {
+           // const s = stories[id];
+            //document.getElementById('story-content').innerHTML = `
+              //  <h2 class="text-3xl font-bold mb-6 text-emerald-900">${s.title}</h2>
+               // <div class="text-slate-600 leading-relaxed text-lg">${s.text}</div>
+              //  <div class="mt-8 pt-6 border-t border-slate-100 flex justify-end">
+               //     <button onclick="closeStory()" class="bg-emerald-600 text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-emerald-100 hover:bg-emerald-700 transition">Tutup Bacaan</button>
+               // </div>
+          //  `;
+           // document.getElementById('story-modal').classList.add('active');
+       // }
 
-        function closeStory() {
-            document.getElementById('story-modal').classList.remove('active');
-        }
+        //function closeStory() {
+          //  document.getElementById('story-modal').classList.remove('active');
+        //}
 
         // SISTEM KUIZ
-        const quizData = {
-            'kecil': [
-                { q: 'Bilakah tarikh lahir Nabi Muhammad SAW?', a: ['12 Rabiulawal', '10 Muharram', '1 Ramadan', '27 Rejab'], correct: 0 },
-                { q: 'Siapakah ibu susuan Nabi di pedalaman?', a: ['Halimatus Sa\'diyah', 'Aminah', 'Thuwaibah', 'Ummu Aiman'], correct: 0 },
-                { q: 'Apakah peristiwa ajaib yang berlaku semasa kecil di perkampungan Bani Sa\'ad?', a: ['Turun Wahyu', 'Isra Mi\'raj', 'Pembelahan Dada', 'Bulan Terbelah'], correct: 2 },
-                { q: 'Nabi Muhammad SAW lahir pada Tahun...?', a: ['Kuda', 'Gajah', 'Unta', 'Singa'], correct: 1 },
-                { q: 'Siapakah datuk Nabi yang menjaganya selepas kematian ibu Baginda?', a: ['Abbas', 'Abu Talib', 'Abu Lahab', 'Abdul Muttalib'], correct: 3 }
-            ],
-            'remaja': [
-                { q: 'Apakah gelaran yang diberikan kepada Nabi kerana sifat jujurnya?', a: ['As-Siddiq', 'Al-Amin', 'Al-Faruq', 'Zun Nurain'], correct: 1 },
-                { q: 'Nabi mengikuti bapa saudaranya berniaga ke negeri...?', a: ['Yaman', 'Mesir', 'Syam', 'Parsi'], correct: 2 },
-                { q: 'Berapakah usia Nabi semasa berkahwin dengan Saiditina Khadijah?', a: ['25 Tahun', '30 Tahun', '40 Tahun', '20 Tahun'], correct: 0 },
-                { q: 'Siapakah rahib yang melihat tanda kenabian pada Nabi semasa kecil?', a: ['Waraqah', 'Bahira', 'Salman', 'Najasyi'], correct: 1 },
-                { q: 'Siapakah bapa saudara yang menjaga Nabi selepas kematian datuknya?', a: ['Hamzah', 'Abbas', 'Abu Talib', 'Abu Lahab'], correct: 2 }
-            ],
-            'dakwah': [
-                { q: 'Di manakah Nabi menerima wahyu pertama?', a: ['Gua Hira\'', 'Gua Thaur', 'Masjidil Haram', 'Bukit Safa'], correct: 0 },
-                { q: 'Berapakah usia Nabi semasa menjadi Rasul?', a: ['25 Tahun', '40 Tahun', '63 Tahun', '50 Tahun'], correct: 1 },
-                { q: 'Apakah nama bandar destinasi Hijrah Nabi?', a: ['Mekah', 'Madinah', 'Taif', 'Habsyah'], correct: 1 },
-                { q: 'Siapakah orang pertama daripada kalangan wanita yang memeluk Islam?', a: ['Saiditina Khadijah', 'Saiditina Aisyah', 'Saiditina Fatimah', 'Ummu Salamah'], correct: 0 },
-                { q: 'Apakah nama masjid pertama yang dibina semasa Hijrah?', a: ['Masjid Aqsa', 'Masjid Nabawi', 'Masjidil Haram', 'Masjid Quba'], correct: 3 }
-            ],
-            'akhir': [
-                { q: 'Di manakah Nabi menyampaikan Khutbah Terakhir?', a: ['Lembah Arafah', 'Mina', 'Muzdalifah', 'Masjid Nabawi'], correct: 0 },
-                { q: 'Berapakah usia Nabi semasa wafat?', a: ['60 Tahun', '63 Tahun', '70 Tahun', '40 Tahun'], correct: 1 },
-                { q: 'Apakah nama Haji terakhir yang dilakukan Nabi?', a: ['Haji Wada\'', 'Haji Akbar', 'Haji Mabrur', 'Haji Ifrad'], correct: 0 },
-                { q: 'Di rumah siapakah Nabi wafat?', a: ['Saiditina Khadijah', 'Saiditina Aisyah', 'Saiditina Hafsah', 'Saiditina Fatimah'], correct: 1 },
-                { q: 'Apakah peninggalan utama Nabi buat umatnya?', a: ['Harta kekayaan', 'Al-Quran & Sunnah', 'Istana besar', 'Wilayah jajahan'], correct: 1 }
-            ]
-        };
+      //  const quizData = {
+           // 'kecil': [
+               // { q: 'Bilakah tarikh lahir Nabi Muhammad SAW?', a: ['12 Rabiulawal', '10 Muharram', '1 Ramadan', '27 Rejab'], correct: 0 },
+              //  { q: 'Siapakah ibu susuan Nabi di pedalaman?', a: ['Halimatus Sa\'diyah', 'Aminah', 'Thuwaibah', 'Ummu Aiman'], correct: 0 },
+              //  { q: 'Apakah peristiwa ajaib yang berlaku semasa kecil di perkampungan Bani Sa\'ad?', a: ['Turun Wahyu', 'Isra Mi\'raj', 'Pembelahan Dada', 'Bulan Terbelah'], correct: 2 },
+              //  { q: 'Nabi Muhammad SAW lahir pada Tahun...?', a: ['Kuda', 'Gajah', 'Unta', 'Singa'], correct: 1 },
+              //  { q: 'Siapakah datuk Nabi yang menjaganya selepas kematian ibu Baginda?', a: ['Abbas', 'Abu Talib', 'Abu Lahab', 'Abdul Muttalib'], correct: 3 }
+           // ],
+           // 'remaja': [
+               // { q: 'Apakah gelaran yang diberikan kepada Nabi kerana sifat jujurnya?', a: ['As-Siddiq', 'Al-Amin', 'Al-Faruq', 'Zun Nurain'], correct: 1 },
+              //  { q: 'Nabi mengikuti bapa saudaranya berniaga ke negeri...?', a: ['Yaman', 'Mesir', 'Syam', 'Parsi'], correct: 2 },
+               // { q: 'Berapakah usia Nabi semasa berkahwin dengan Saiditina Khadijah?', a: ['25 Tahun', '30 Tahun', '40 Tahun', '20 Tahun'], correct: 0 },
+               // { q: 'Siapakah rahib yang melihat tanda kenabian pada Nabi semasa kecil?', a: ['Waraqah', 'Bahira', 'Salman', 'Najasyi'], correct: 1 },
+               // { q: 'Siapakah bapa saudara yang menjaga Nabi selepas kematian datuknya?', a: ['Hamzah', 'Abbas', 'Abu Talib', 'Abu Lahab'], correct: 2 }
+          //  ],
+          //  'dakwah': [
+              //  { q: 'Di manakah Nabi menerima wahyu pertama?', a: ['Gua Hira\'', 'Gua Thaur', 'Masjidil Haram', 'Bukit Safa'], correct: 0 },
+              //  { q: 'Berapakah usia Nabi semasa menjadi Rasul?', a: ['25 Tahun', '40 Tahun', '63 Tahun', '50 Tahun'], correct: 1 },
+              //  { q: 'Apakah nama bandar destinasi Hijrah Nabi?', a: ['Mekah', 'Madinah', 'Taif', 'Habsyah'], correct: 1 },
+              //  { q: 'Siapakah orang pertama daripada kalangan wanita yang memeluk Islam?', a: ['Saiditina Khadijah', 'Saiditina Aisyah', 'Saiditina Fatimah', 'Ummu Salamah'], correct: 0 },
+              //  { q: 'Apakah nama masjid pertama yang dibina semasa Hijrah?', a: ['Masjid Aqsa', 'Masjid Nabawi', 'Masjidil Haram', 'Masjid Quba'], correct: 3 }
+           // ],
+           // 'akhir': [
+              //  { q: 'Di manakah Nabi menyampaikan Khutbah Terakhir?', a: ['Lembah Arafah', 'Mina', 'Muzdalifah', 'Masjid Nabawi'], correct: 0 },
+               // { q: 'Berapakah usia Nabi semasa wafat?', a: ['60 Tahun', '63 Tahun', '70 Tahun', '40 Tahun'], correct: 1 },
+               // { q: 'Apakah nama Haji terakhir yang dilakukan Nabi?', a: ['Haji Wada\'', 'Haji Akbar', 'Haji Mabrur', 'Haji Ifrad'], correct: 0 },
+               // { q: 'Di rumah siapakah Nabi wafat?', a: ['Saiditina Khadijah', 'Saiditina Aisyah', 'Saiditina Hafsah', 'Saiditina Fatimah'], correct: 1 },
+              //  { q: 'Apakah peninggalan utama Nabi buat umatnya?', a: ['Harta kekayaan', 'Al-Quran & Sunnah', 'Istana besar', 'Wilayah jajahan'], correct: 1 }
+           // ]
+       // };
 
         let currentQuiz = [];
         let currentIdx = 0;
@@ -903,11 +830,124 @@ function closeLightbox() {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeLightbox();
 });
-    </script>
+
+</script>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const firebaseConfig = { 
+    apiKey: "AIzaSyAu8Ji5zO1YeAmN5vbNhF7Vg2Mx5In07-Q",
+    authDomain: "sirahplay.firebaseapp.com",
+    projectId: "sirahplay",
+    storageBucket: "sirahplay.firebasestorage.app",
+    appId: "1:52150333122:web:2f9f428b662e3a3af7155b"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+        let storiesData = {};
+
+        // Fasa 1: Fungsi Buka Modal (Guna window. supaya boleh dipanggil dari HTML)
+        window.openStory = (id) => {
+            const s = storiesData[id];
+            if (!s) {
+                console.error("Data tidak dijumpai untuk ID:", id);
+                return;
+            }
+
+            const contentArea = document.getElementById('story-content');
+            contentArea.innerHTML = `
+                <h2 class="text-3xl font-bold mb-6 text-emerald-900 font-bold">${s.title}</h2>
+                <div class="text-slate-600 leading-relaxed text-lg whitespace-pre-wrap">${s.content || s.text || ""}</div>
+                <div class="mt-8 pt-6 border-t border-slate-100 flex justify-end">
+                    <button onclick="closeStory()" class="bg-emerald-600 text-white px-8 py-3 rounded-xl font-bold shadow-lg shadow-emerald-100 hover:bg-emerald-700 transition">Tutup Bacaan</button>
+                </div>
+            `;
+            
+            document.getElementById('story-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        };
+
+        // Fasa 2: Fungsi Tutup Modal
+        window.closeStory = () => {
+            document.getElementById('story-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        };
+
+        // Fasa 3: Ambil data dari Firestore
+        const container = document.getElementById('storiesContainer');
+
+        onSnapshot(collection(db, "stories"), (snapshot) => {
+            if (!container) return;
+            container.innerHTML = ''; // Kosongkan container
+            storiesData = {}; 
+
+            if (snapshot.empty) {
+                container.innerHTML = '<p class="text-center col-span-full">Tiada kisah sirah dijumpai dalam database.</p>';
+                return;
+            }
+
+            let index = 1;
+            snapshot.forEach(doc => {
+                const id = doc.id;
+                const data = doc.data();
+                storiesData[id] = data;
+
+                // Tentukan warna tema berdasarkan fasa secara automatik
+                const themes = ['emerald', 'blue', 'amber', 'rose'];
+                const theme = themes[(index - 1) % themes.length];
+
+                container.innerHTML += `
+                    <article class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:border-${theme}-300 transition overflow-hidden group">
+                        <div class="flex flex-col md:flex-row gap-8 items-center">
+                            <div class="w-full md:w-1/3 aspect-video bg-slate-50 rounded-2xl overflow-hidden relative"> 
+                                <img src="${data.image || 'https://images.unsplash.com/photo-1473580044384-7ba9967e16a0?w=800'}" 
+                                     class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/10"></div>
+                            </div>
+                            <div class="md:w-2/3">
+                                <span class="text-${theme}-600 font-bold text-xs uppercase tracking-widest">Fasa ${index}</span>
+                                <h3 class="text-2xl font-bold my-2 text-${theme}-900">${data.title}</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">${data.summary || "Klik baca untuk melihat kisah penuh."}</p>
+                                <button onclick="window.openStory('${id}')" class="text-${theme}-600 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+                                    Baca Lanjut <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>`;
+                index++;
+            });
+        });
+
+        window.onclick = (event) => {
+            const modal = document.getElementById('story-modal');
+            if (event.target == modal) closeStory();
+        };
+
+// --- 3. PANGGIL KUIZ (UPDATE DATA GAME) ---
+window.quizData = { kecil: [], remaja: [], dakwah: [], akhir: [] };
+onSnapshot(collection(db, "quizzes"), (snapshot) => {
+    // Reset data kuiz setiap kali ada update
+    window.quizData = { kecil: [], remaja: [], dakwah: [], akhir: [] };
+    snapshot.forEach(doc => {
+        const q = doc.data();
+        if(window.quizData[q.category]) {
+            window.quizData[q.category].push({
+                q: q.q,
+                a: q.a,
+                correct: q.correct
+            });
+        }
+    });
+    console.log("Data Kuiz Firebase dikemaskini:", window.quizData);
+});
+
+
+</script>
+
+
 </body>
-
 </html>
-
-
-
-
